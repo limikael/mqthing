@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+      <style>
+        body, html {
+          margin: 0;
+          font-family: sans-serif;
+          background: #2b3e50;
+          color: #ebebeb;
+        }
+        nav {
+          background: #DF691A;
+          color: #ffffff;
+          font-size: 1.25rem;
+          padding: 1rem;
+          margin-bottom: 2rem;
+        }
+        content, .content {
+          margin: 1rem;
+        }
+      </style>
+      <title>{title}</title>
+    </head>
+    <body>
+      <nav><span id="title">{title}</span></nav>
+      <div class="content">
+        <div class="message" style="display: {messagedisplay}">
+          The settings have been saved.<br/><br/>
+          Please check the LED for connection status.<br/><br/>
+          Press the button to turn the access point on again to reconfigure.
+        </div>
+        <form style="display: {formdisplay}" method="post">
+          <div>Network SSID: <input type="text" value="{ssid}" name="ssid"></div>
+          <div>Password: <input type="text" value="{pass}" name="pass"></div>
+          <input type="submit" value="save">
+        </form>
+      </div>
+    </body>
+  </html>

@@ -1,0 +1,17 @@
+const char MQTHING_PAGE[] PROGMEM=
+    "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <meta name=\"viewport\" "
+    "content=\"width=device-width, initial-scale=1, user-scalable=no\"/>"
+    "\n <style>\n body, html {\n margin: 0;\n font-family: sans-serif;\n ba"
+    "ckground: #2b3e50;\n color: #ebebeb;\n }\n nav {\n background: #DF691"
+    "A;\n color: #ffffff;\n font-size: 1.25rem;\n padding: 1rem;\n margin-"
+    "bottom: 2rem;\n }\n content, .content {\n margin: 1rem;\n }\n </style>"
+    "\n <title>{title}</title>\n </head>\n <body>\n <nav><span id=\"title\">"
+    "{title}</span></nav>\n <div class=\"content\">\n <div class=\"message\""
+    " style=\"display: {messagedisplay}\">\n The settings have been saved"
+    ".<br/><br/>\n Please check the LED for connection status.<br/><br/"
+    ">\n Press the button to turn the access point on again to reconfig"
+    "ure.\n </div>\n <form style=\"display: {formdisplay}\" method=\"post\">"
+    "\n <div>Network SSID: <input type=\"text\" value=\"{ssid}\" name=\"ssid"
+    "\"></div>\n <div>Password: <input type=\"text\" value=\"{pass}\" name=\""
+    "pass\"></div>\n <input type=\"submit\" value=\"save\">\n </form>\n </div>"
+    "\n </body>\n </html>";
