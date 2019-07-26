@@ -261,12 +261,12 @@ void MqThing::_checkButton() {
     return;
 
   int buttonState=digitalRead(_buttonPin);
-  if (!buttonState && _prevButtonState)
+  if (!buttonState && _prevButtonState) {
     setApEnabled(!getApEnabled());
+    delay(50);
+  }
 
   _prevButtonState=buttonState;
-
-  delay(50);
 }
 
 bool MqThing::isConnected() {
